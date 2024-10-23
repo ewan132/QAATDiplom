@@ -2,6 +2,7 @@ package ru.netology.data;
 
 import lombok.SneakyThrows;
 
+import lombok.val;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
@@ -26,6 +27,23 @@ public class SQLHelper{
         return  QUERY_RUNNER.query(conn,sqlCode, new ScalarHandler<String>());
 
     }
+
+    @SneakyThrows
+    public static String getCreditStatus(){
+        var sqlCode = "SELECT * from credit_request_entity cre order by created desc limit 1";
+        var conn = getConnection();
+        return QUERY_RUNNER.query(conn, sqlCode, new ScalarHandler<String>());
+    }
+
+    @SneakyThrows
+    public static void cleanTable(){
+        var conn = getConnection();
+        QUERY_RUNNER.execute(conn, "DELETE FROM credit_request_entity ");
+        QUERY_RUNNER.execute(conn, "DELETE FROM payment_entity");
+        QUERY_RUNNER.execute(conn, "DELETE FROM order_entity");
+    }
+
+
 
 }
 
