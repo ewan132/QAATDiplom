@@ -2,7 +2,6 @@ package ru.netology.data;
 
 import lombok.SneakyThrows;
 
-import lombok.val;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
@@ -43,6 +42,14 @@ public class SQLHelper{
         QUERY_RUNNER.execute(conn, "DELETE FROM order_entity");
     }
 
+    @SneakyThrows
+    public static Integer countPay(){
+        var conn = getConnection();
+        var sqlCode = "SELECT COUNT(*) FROM payment_entity pe";
+        //QUERY_RUNNER.execute(conn, "SELECT COUNT(*) FROM payment_entity pe");
+        return QUERY_RUNNER.query(conn, sqlCode, new ScalarHandler<Integer>());
+
+    }
 
 
 }

@@ -6,7 +6,7 @@ services:
     volumes:
       - ./gate-simulator:/home/node/app
     ports:
-      - '4108:5432'
+      - '9999:9999'
     command: "npm start"
 
   postgres:

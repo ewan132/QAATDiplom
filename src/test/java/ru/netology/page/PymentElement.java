@@ -3,6 +3,8 @@ package ru.netology.page;
 import com.codeborne.selenide.SelenideElement;
 import ru.netology.data.DataHelper;
 
+import java.time.Duration;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
@@ -18,7 +20,7 @@ public class PymentElement {
     private SelenideElement nomberCard = $("[placeholder='0000 0000 0000 0000']");
     private SelenideElement month = $("[placeholder='08']");
     private SelenideElement year = $("[placeholder='22']");
-    private SelenideElement owner = $("[input__control]");
+    private SelenideElement owner = $$("[class=input__inner]").findBy(text("Владелец")).$("[class=input__control]");
     private SelenideElement cvvCode = $("[placeholder='999']");
 
     private SelenideElement cardIncorrect = $$("[class=input__inner]").findBy(text("Номер карты"))
@@ -32,6 +34,8 @@ public class PymentElement {
     private SelenideElement cvcIncorrect = $$("[class=input__inner]").findBy(text("CVC/CVV"))
             .$(withText("Неверный формат"));
 
+    private SelenideElement completedPay = $(byText("Операция одобрена Банком."));
+
 //добавить табличку "Одобрение платежа"
 
     public void buttonVisible(){
@@ -39,14 +43,19 @@ public class PymentElement {
         buyOnCredit.shouldBe(visible);
     }
     public void elementsVisible(){
-        cardIncorrect.shouldBe(visible);
-        monthIncorrect.shouldBe(visible);
-        yearIncorrect.shouldBe(visible);
-        nameIncorrect.shouldBe(visible);
-        cvcIncorrect.shouldBe(visible);
+        nomberCard.shouldBe(visible);
+        month.shouldBe(visible);
+        year.shouldBe(visible);
+        owner.shouldBe(visible);
+        cvvCode.shouldBe(visible);
         continueButton.shouldBe(visible);
+
+
     }
 
+    public void comledetPayVisible(){
+        completedPay.shouldBe(visible, Duration.ofSeconds(15));
+    }
 
     public void clickBuyButton(){
         buyButton.click();
@@ -55,7 +64,7 @@ public class PymentElement {
         buyOnCredit.click();
     }
 
-    public void getAppruveNomberCArd(DataHelper.cardInfo cardInfo) {
+    public void getAppruveNomberq(DataHelper.cardInfo cardInfo) {
         nomberCard.setValue(cardInfo.getCardNubmer());
         month.setValue(cardInfo.getMonth());
         year.setValue(cardInfo.getYars());
@@ -63,8 +72,5 @@ public class PymentElement {
         cvvCode.setValue(cardInfo.getCvc());
         continueButton.click();
     }
-    public void getAppruveNomber(DataHelper.cardInfo cardInfo) {
-        cardIncorrect.setValue(cardInfo.getCardNubmer());
 
-    }
 }

@@ -1,0 +1,1 @@
+{"uuid":"5495321c-1992-46ef-8e95-fdc18513a782","name":"TestDiplom","children":["1048a445-a00a-4e2e-b5ae-cfb51ded10d7"],"befores":[],"afters":[{"name":"teardown","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1730137101667,"stop":1730137102039}],"start":1730137098082,"stop":1730137102040}
