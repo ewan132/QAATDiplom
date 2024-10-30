@@ -16,13 +16,13 @@ import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static ru.netology.data.DataHelper.getNoValidCard;
 import static ru.netology.data.DataHelper.getValidCard;
 import static ru.netology.data.SQLHelper.cleanTable;
 
 public class TestDiplom {
     PymentElement element = new PymentElement();
-    private int countAfter;
-    private int countBefore;
+
 
 
 
@@ -41,13 +41,40 @@ public class TestDiplom {
 
     @Test
     void visibleElements(){
-        element.clickBuyButton();
+        element.clickBuyOnCreditButton();
+        element.buttonVisible();
+        element.elementsVisible();
+        element.getAppruveNomberq(getNoValidCard());
+        element.comledetPayVisible();
+        int actual = SQLHelper.getCreditStatus();
+        int exp = 0;
+        System.out.println(SQLHelper.getCreditStatus());
+        Assertions.assertEquals(exp,actual);
+
+
+    }
+    @Test
+    void visibleElementsq(){
+        element.clickBuyOnCreditButton();
         element.buttonVisible();
         element.elementsVisible();
         element.getAppruveNomberq(getValidCard());
         element.comledetPayVisible();
-        countBefore = SQLHelper.countPay();
-        countAfter = SQLHelper.countPay();
-       assertEquals(countBefore+1, countAfter);
+        int actual = SQLHelper.getCreditStatus();
+        int exp = 1;
+        System.out.println(SQLHelper.getCreditStatus());
+        Assertions.assertEquals(exp,actual);
+    }
+    @Test
+    void visibleElementsw(){
+        element.clickBuyOnCreditButton();
+        element.buttonVisible();
+        element.elementsVisible();
+        element.getAppruveNomberq(getValidCard());
+        element.comledetPayVisible();
+        int actual = SQLHelper.getCreditStatus();
+        int exp = 1;
+        System.out.println(SQLHelper.getCreditStatus());
+        Assertions.assertEquals(exp,actual);
     }
 }

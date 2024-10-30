@@ -1,1 +1,0 @@
-{"uuid":"ee7b44e2-559d-4c08-b2fe-df11f3fab6d2","name":"sqltest()","children":["53444fcf-c3ce-4cd3-8f86-a3d67625cd9d"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1730145377495,"stop":1730145379844}],"afters":[],"start":1730145377431,"stop":1730145380286}

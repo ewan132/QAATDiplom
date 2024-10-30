@@ -28,10 +28,16 @@ public class SQLHelper{
     }
 
     @SneakyThrows
-    public static String getCreditStatus(){
-        var sqlCode = "SELECT * from credit_request_entity cre order by created desc limit 1";
+    public static int getCreditStatus(){
+        var sqlCode = "SELECT status from credit_request_entity cre order by created desc limit 1";
         var conn = getConnection();
-        return QUERY_RUNNER.query(conn, sqlCode, new ScalarHandler<String>());
+       // return QUERY_RUNNER.query(conn, sqlCode, new ScalarHandler<String>());
+        String s = QUERY_RUNNER.query(conn, sqlCode, new ScalarHandler<String>());
+        int count = 0;
+        if (s.equals("APPROVED")){
+            count+=1;
+        }
+        return count;
     }
 
     @SneakyThrows
