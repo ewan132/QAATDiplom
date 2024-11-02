@@ -36,9 +36,9 @@ public class DataHelper {
         return new cardInfo("4444 4444 4444 4442", "08","25","Ivan"," ");
     }
     public static cardInfo getZeroMonth(){
-        return new cardInfo("4444 4444 4444 4442", "00","25","Ivan"," ");
+        return new cardInfo("4444 4444 4444 4442", "00","25","Ivan","999");
     }
     public static cardInfo getYearLessToday(){
-        return new cardInfo("4444 4444 4444 4442", "08","20","Ivan"," ");
+        return new cardInfo("4444 4444 4444 4442", "08","20","Ivan","999");
     }
 }

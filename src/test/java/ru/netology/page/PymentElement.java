@@ -28,8 +28,7 @@ public class PymentElement {
     private SelenideElement yearIncorrect = $$("[class=input__inner]").findBy(text("Год"))
             .$(withText("Неверный формат"));
     private SelenideElement nameIncorrect = $(withText("Поле обязательно для заполнения"));
-    private SelenideElement cvcIncorrect = $$("[class=input__inner]").findBy(text("CVC/CVV"))
-            .$(withText("Неверный формат"));
+    private SelenideElement yearLessToday = $(withText("Истёк срок действия карты"));
 
     private SelenideElement completedPay = $(byText("Операция одобрена Банком."));
 
@@ -70,11 +69,14 @@ public class PymentElement {
         continueButton.click();
     }
 
-    public void emptyNomberCArdAndMoth(){
+    public void invalidFormat(){
         incorretcFormat.shouldBe(visible);
     }
     public void emptyOwner(){
         nameIncorrect.shouldBe(visible);
+    }
+    public void yearLessToday(){
+        yearLessToday.shouldBe(visible);
     }
 
 }
