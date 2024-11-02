@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.netology.test.TestDiplom" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-10-30T17:30:36" hostname="VLD-NOTE10" time="22.765">
+<testsuite name="ru.netology.test.TestDiplom" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-11-02T08:53:13" hostname="VLD-NOTE10" time="5.612">
   <properties/>
-  <testcase name="visibleElementsq()" classname="ru.netology.test.TestDiplom" time="12.785"/>
-  <testcase name="visibleElementsw()" classname="ru.netology.test.TestDiplom" time="5.432"/>
-  <testcase name="visibleElements()" classname="ru.netology.test.TestDiplom" time="4.541"/>
-  <system-out><![CDATA[1
-1
-0
-]]></system-out>
-  <system-err><![CDATA[окт. 30, 2024 8:30:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="Пустое поле CVV" classname="ru.netology.test.TestDiplom" time="5.612"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[нояб. 02, 2024 11:53:17 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 130
-окт. 30, 2024 8:30:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 130.0.6723.91. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+нояб. 02, 2024 11:53:17 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 130.0.6723.92. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>

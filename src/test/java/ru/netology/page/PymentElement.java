@@ -23,14 +23,11 @@ public class PymentElement {
     private SelenideElement owner = $$("[class=input__inner]").findBy(text("Владелец")).$("[class=input__control]");
     private SelenideElement cvvCode = $("[placeholder='999']");
 
-    private SelenideElement cardIncorrect = $$("[class=input__inner]").findBy(text("Номер карты"))
-            .$(withText("Неверный формат"));
-    private SelenideElement monthIncorrect = $$("[class=input__inner]").findBy(text("Месяц"))
-            .$(withText("Неверный формат"));
+    private SelenideElement incorretcFormat =$(withText("Неверный формат"));
+
     private SelenideElement yearIncorrect = $$("[class=input__inner]").findBy(text("Год"))
             .$(withText("Неверный формат"));
-    private SelenideElement nameIncorrect = $$("[class=input__inner]").findBy(text("Владелец"))
-            .$(withText("Поле обязательно для заполнения"));
+    private SelenideElement nameIncorrect = $(withText("Поле обязательно для заполнения"));
     private SelenideElement cvcIncorrect = $$("[class=input__inner]").findBy(text("CVC/CVV"))
             .$(withText("Неверный формат"));
 
@@ -71,6 +68,13 @@ public class PymentElement {
         owner.setValue(cardInfo.getNameOwner());
         cvvCode.setValue(cardInfo.getCvc());
         continueButton.click();
+    }
+
+    public void emptyNomberCArdAndMoth(){
+        incorretcFormat.shouldBe(visible);
+    }
+    public void emptyOwner(){
+        nameIncorrect.shouldBe(visible);
     }
 
 }
