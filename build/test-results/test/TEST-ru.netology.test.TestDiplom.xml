@@ -1,30 +1,17 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.netology.test.TestDiplom" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-10-29T19:39:12" hostname="EWAN132" time="14.349">
+<testsuite name="ru.netology.test.TestDiplom" tests="11" skipped="0" failures="1" errors="0" timestamp="2024-11-05T18:04:28" hostname="EWAN132" time="33.802">
   <properties/>
-  <testcase name="visibleElements()" classname="ru.netology.test.TestDiplom" time="14.349"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[окт. 29, 2024 10:39:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 130
-окт. 29, 2024 10:39:17 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 130.0.6723.70. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-</testsuite>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.netology.test.TestDiplom" tests="11" skipped="0" failures="1" errors="0" timestamp="2024-11-02T11:33:08" hostname="VLD-NOTE10" time="58.912">
-  <properties/>
-  <testcase name="Пустое поле Год" classname="ru.netology.test.TestDiplom" time="5.363"/>
-  <testcase name="Отображение элементов, приобретение билета покупкой со статусом APPROVED" classname="ru.netology.test.TestDiplom" time="9.767"/>
-  <testcase name="Приобретение билета покупкой со статусом DECLINED" classname="ru.netology.test.TestDiplom" time="7.53"/>
-  <testcase name="Пустое поле Номер карты" classname="ru.netology.test.TestDiplom" time="1.958"/>
-  <testcase name="Пустое поле Месяц" classname="ru.netology.test.TestDiplom" time="1.896"/>
-  <testcase name="Пустое поле Владелец" classname="ru.netology.test.TestDiplom" time="1.975"/>
-  <testcase name="Нулевой месяц" classname="ru.netology.test.TestDiplom" time="6.224">
-    <failure message="Element not found {with text: Неверный формат}&#13;&#10;Expected: visible&#13;&#10;Screenshot: file:/C:/IvKuznetsov/Project%20netology/Diplom/QAATDiplom/build/reports/tests/1730547222746.0.png&#13;&#10;Page source: file:/C:/IvKuznetsov/Project%20netology/Diplom/QAATDiplom/build/reports/tests/1730547222746.0.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[contains(normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {with text: Неверный формат}
+  <testcase name="Пустое поле Год" classname="ru.netology.test.TestDiplom" time="3.382"/>
+  <testcase name="Отображение элементов, приобретение билета покупкой со статусом APPROVED" classname="ru.netology.test.TestDiplom" time="7.175"/>
+  <testcase name="Приобретение билета покупкой со статусом DECLINED" classname="ru.netology.test.TestDiplom" time="3.196"/>
+  <testcase name="Пустое поле Номер карты" classname="ru.netology.test.TestDiplom" time="0.563"/>
+  <testcase name="Пустое поле Месяц" classname="ru.netology.test.TestDiplom" time="0.586"/>
+  <testcase name="Пустое поле Владелец" classname="ru.netology.test.TestDiplom" time="0.595"/>
+  <testcase name="Нулевой месяц" classname="ru.netology.test.TestDiplom" time="4.833">
+    <failure message="Element not found {with text: Неверный формат}&#13;&#10;Expected: visible&#13;&#10;Screenshot: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730829888778.0.png&#13;&#10;Page source: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730829888778.0.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[contains(normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {with text: Неверный формат}
 Expected: visible
-Screenshot: file:/C:/IvKuznetsov/Project%20netology/Diplom/QAATDiplom/build/reports/tests/1730547222746.0.png
-Page source: file:/C:/IvKuznetsov/Project%20netology/Diplom/QAATDiplom/build/reports/tests/1730547222746.0.html
+Screenshot: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730829888778.0.png
+Page source: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730829888778.0.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[contains(normalize-space(translate(string(.), '
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
@@ -136,10 +123,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.23'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [182ffc5c292c79c56477b61e860311dc, findElement {using=xpath, value=.//*/text()[contains(normalize-space(translate(string(.), '	
+Command: [52711e9134e1d1f087194e471c7093b1, findElement {using=xpath, value=.//*/text()[contains(normalize-space(translate(string(.), '	
  ', '    ')), &quot;Неверный формат&quot;)]/parent::*}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\IVKUZN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:22967}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:22967/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 182ffc5c292c79c56477b61e860311dc
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\Ewan1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52005}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52005/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52711e9134e1d1f087194e471c7093b1
 	at jdk.internal.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
 	at java.base@11.0.23/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.23/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
@@ -162,17 +149,16 @@ Session ID: 182ffc5c292c79c56477b61e860311dc
 	... 98 more
 </failure>
   </testcase>
-  <testcase name="Пустое поле CVV" classname="ru.netology.test.TestDiplom" time="1.984"/>
-  <testcase name="Отображение элементов, приобретение билета в кредит со статусом DECLINED" classname="ru.netology.test.TestDiplom" time="12.039"/>
-  <testcase name="Приобретение билета в кредит со статусом APPROVED" classname="ru.netology.test.TestDiplom" time="7.959"/>
-  <testcase name="Месяц меньше Today" classname="ru.netology.test.TestDiplom" time="2.162"/>
+  <testcase name="Пустое поле CVV" classname="ru.netology.test.TestDiplom" time="0.673"/>
+  <testcase name="Отображение элементов, приобретение билета в кредит со статусом DECLINED" classname="ru.netology.test.TestDiplom" time="9.801"/>
+  <testcase name="Приобретение билета в кредит со статусом APPROVED" classname="ru.netology.test.TestDiplom" time="2.46"/>
+  <testcase name="Месяц меньше Today" classname="ru.netology.test.TestDiplom" time="0.516"/>
   <system-out><![CDATA[1
 0
 ]]></system-out>
-  <system-err><![CDATA[нояб. 02, 2024 2:33:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <system-err><![CDATA[нояб. 05, 2024 9:04:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 130
-нояб. 02, 2024 2:33:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+нояб. 05, 2024 9:04:30 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 130.0.6723.92. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>
->>>>>>> eb1f68a9732130b299f44bc3bf3d7be97d71f1bd

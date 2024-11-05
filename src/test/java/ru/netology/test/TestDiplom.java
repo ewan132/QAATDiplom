@@ -1,45 +1,21 @@
 package ru.netology.test;
 
 
-<<<<<<< HEAD
-
-//import dev.failsafe.internal.util.Assert;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-=======
 import org.junit.jupiter.api.*;
->>>>>>> eb1f68a9732130b299f44bc3bf3d7be97d71f1bd
 import ru.netology.data.SQLHelper;
 import ru.netology.page.PymentElement;
 
 import static com.codeborne.selenide.Selenide.open;
 import static ru.netology.data.DataHelper.*;
 import static ru.netology.data.SQLHelper.cleanTable;
-import static ru.netology.data.SQLHelper.getCreditStatus;
-
 
 public class TestDiplom {
     PymentElement element = new PymentElement();
-<<<<<<< HEAD
-    //private int countAfter ;
-    //private int countBefore ;
 
-/*
-=======
-
->>>>>>> eb1f68a9732130b299f44bc3bf3d7be97d71f1bd
     @AfterAll
     static void teardown() {
         cleanTable();
-<<<<<<< HEAD
-    }*/
-
-=======
     }
->>>>>>> eb1f68a9732130b299f44bc3bf3d7be97d71f1bd
 
     @BeforeEach
     void setUp() {
@@ -48,10 +24,6 @@ public class TestDiplom {
 
 
     @Test
-<<<<<<< HEAD
-    void visibleElements(){
-        element.clickBuyOnCreditButton();
-=======
     @DisplayName("Отображение элементов, приобретение билета в кредит со статусом DECLINED")
     void visibleElementsAndBuyOnCreditDec() {
         element.clickBuyOnCreditButton();
@@ -81,19 +53,14 @@ public class TestDiplom {
     @DisplayName("Отображение элементов, приобретение билета покупкой со статусом APPROVED")
     void visibleElementsAndBuyApp() {
         element.clickBuyButton();
->>>>>>> eb1f68a9732130b299f44bc3bf3d7be97d71f1bd
         element.buttonVisible();
         element.elementsVisible();
         element.getAppruveNomberq(getValidCard());
         element.comledetPayVisible();
-<<<<<<< HEAD
-
-=======
         int actual = SQLHelper.getBuyStatus();
         int exp = 1;
         System.out.println(SQLHelper.getBuyStatus());
         Assertions.assertEquals(exp, actual);
->>>>>>> eb1f68a9732130b299f44bc3bf3d7be97d71f1bd
     }
 
     @Test
