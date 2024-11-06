@@ -5,8 +5,8 @@
 3. Открыть проект в Intellij Idea
 4. Запустить контейнеры командой docker-compose up
 5. Запустить SUT контейнер в отдельном окне терминала.
-    * При тестировании на mysql командой `java -jar aqa-shop.jar --spring.profiles.active=mysql`
-    * При тестировании на postgres командой `java -jar aqa-shop.jar --spring.profiles.active=postgres`
+    * При тестировании на mysql командой `java -jar artifacts/aqa-shop.jar --spring.profiles.active=mysql`
+    * При тестировании на postgres командой `java -jar artifacts/aqa-shop.jar --spring.profiles.active=postgres`
     * Если при запуске джарника появится ошибка запуска, то необходимо добавить подключение к БД командой `docker container run -d -e MYSQL_RANDOM_ROOT_PASSWORD=yes -e MYSQL_DATABASE=app -e MYSQL_USER=app -e MYSQL_PASSWORD=pass mysql`
 6. Приложение должно запуститься по адресу http://localhost:8080/
 

@@ -24,7 +24,7 @@ public class TestDiplom {
 
 
     @Test
-    @DisplayName("Отображение элементов, приобретение билета в кредит со статусом DECLINED")
+    @DisplayName("Отображение элементов, приобретение билета в кредит со статусом DECLINED отображение в БД)")
     void visibleElementsAndBuyOnCreditDec() {
         element.clickBuyOnCreditButton();
         element.buttonVisible();
@@ -39,7 +39,7 @@ public class TestDiplom {
     }
 
     @Test
-    @DisplayName("Приобретение билета в кредит со статусом APPROVED")
+    @DisplayName("Приобретение билета в кредит со статусом APPROVED и отображение в БД)")
     void byOnCreditApp() {
         element.clickBuyOnCreditButton();
         element.getAppruveNomberq(getValidCard());
@@ -50,7 +50,7 @@ public class TestDiplom {
     }
 
     @Test
-    @DisplayName("Отображение элементов, приобретение билета покупкой со статусом APPROVED")
+    @DisplayName("Отображение элементов, приобретение билета покупкой со статусом APPROVED и отображение в БД")
     void visibleElementsAndBuyApp() {
         element.clickBuyButton();
         element.buttonVisible();
@@ -64,7 +64,7 @@ public class TestDiplom {
     }
 
     @Test
-    @DisplayName("Приобретение билета покупкой со статусом DECLINED")
+    @DisplayName("Приобретение билета покупкой со статусом DECLINED отображение статуса в БД")
     void visibleElementsAndBuyDec() {
         element.clickBuyButton();
         element.getAppruveNomberq(getNoValidCard());
@@ -73,6 +73,25 @@ public class TestDiplom {
         int exp = 0;
         System.out.println(SQLHelper.getBuyStatus());
         Assertions.assertEquals(exp, actual);
+    }
+    @Test
+    @DisplayName("Отказ операции при покупке в кредит")
+    void visibleFailPayOnCredit(){
+        element.clickBuyOnCreditButton();
+        element.buttonVisible();
+        element.elementsVisible();
+        element.getAppruveNomberq(getNoValidCard());
+        element.failPayVisible();
+    }
+
+    @Test
+    @DisplayName("Отказ операции при покупке ")
+    void visibleFailPay(){
+        element.clickBuyButton();
+        element.buttonVisible();
+        element.elementsVisible();
+        element.getAppruveNomberq(getNoValidCard());
+        element.failPayVisible();
     }
 
     @Test

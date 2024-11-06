@@ -31,8 +31,8 @@ public class PymentElement {
     private SelenideElement yearLessToday = $(withText("Истёк срок действия карты"));
 
     private SelenideElement completedPay = $(byText("Операция одобрена Банком."));
+    private SelenideElement operationFailure = $(byText("Ошибка! Банк отказал в проведении операции."));
 
-//добавить табличку "Одобрение платежа"
 
     public void buttonVisible(){
         buyButton.shouldBe(visible);
@@ -51,6 +51,9 @@ public class PymentElement {
 
     public void comledetPayVisible(){
         completedPay.shouldBe(visible, Duration.ofSeconds(15));
+    }
+    public void failPayVisible(){
+        operationFailure.shouldBe(visible, Duration.ofSeconds(15));
     }
 
     public void clickBuyButton(){
