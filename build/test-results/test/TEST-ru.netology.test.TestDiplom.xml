@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.netology.test.TestDiplom" tests="13" skipped="0" failures="3" errors="0" timestamp="2024-11-06T08:01:53" hostname="EWAN132" time="68.274">
+<testsuite name="ru.netology.test.TestDiplom" tests="13" skipped="0" failures="3" errors="0" timestamp="2024-11-06T11:46:35" hostname="EWAN132" time="68.617">
   <properties/>
-  <testcase name="Отказ операции при покупке в кредит" classname="ru.netology.test.TestDiplom" time="18.633">
-    <failure message="Element should be visible {by text: Ошибка! Банк отказал в проведении операции.}&#13;&#10;Element: '&lt;div class=&quot;notification__content&quot; displayed:false&gt;&lt;/div&gt;'&#13;&#10;Actual value: hidden&#13;&#10;Screenshot: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730880131744.0.png&#13;&#10;Page source: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730880131744.0.html&#13;&#10;Timeout: 15 s." type="com.codeborne.selenide.ex.ElementShould">Element should be visible {by text: Ошибка! Банк отказал в проведении операции.}
+  <testcase name="Отказ операции при покупке в кредит" classname="ru.netology.test.TestDiplom" time="18.606">
+    <failure message="Element should be visible {by text: Ошибка! Банк отказал в проведении операции.}&#13;&#10;Element: '&lt;div class=&quot;notification__content&quot; displayed:false&gt;&lt;/div&gt;'&#13;&#10;Actual value: hidden&#13;&#10;Screenshot: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730893613622.0.png&#13;&#10;Page source: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730893613622.0.html&#13;&#10;Timeout: 15 s." type="com.codeborne.selenide.ex.ElementShould">Element should be visible {by text: Ошибка! Банк отказал в проведении операции.}
 Element: '&lt;div class=&quot;notification__content&quot; displayed:false&gt;&lt;/div&gt;'
 Actual value: hidden
-Screenshot: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730880131744.0.png
-Page source: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730880131744.0.html
+Screenshot: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730893613622.0.png
+Page source: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730893613622.0.html
 Timeout: 15 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
 	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
@@ -16,9 +16,9 @@ Timeout: 15 s.
 	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
-	at app//com.sun.proxy.$Proxy14.shouldBe(Unknown Source)
+	at app//com.sun.proxy.$Proxy15.shouldBe(Unknown Source)
 	at app//ru.netology.page.PymentElement.failPayVisible(PymentElement.java:56)
-	at app//ru.netology.test.TestDiplom.visibleFailPayOnCredit(TestDiplom.java:84)
+	at app//ru.netology.test.TestDiplom.visibleFailPayOnCredit(TestDiplom.java:96)
 	at java.base@11.0.23/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@11.0.23/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base@11.0.23/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -110,12 +110,12 @@ Timeout: 15 s.
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="Отказ операции при покупке" classname="ru.netology.test.TestDiplom" time="16.097">
-    <failure message="Element should be visible {by text: Ошибка! Банк отказал в проведении операции.}&#13;&#10;Element: '&lt;div class=&quot;notification__content&quot; displayed:false&gt;&lt;/div&gt;'&#13;&#10;Actual value: hidden&#13;&#10;Screenshot: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730880147935.1.png&#13;&#10;Page source: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730880147935.1.html&#13;&#10;Timeout: 15 s." type="com.codeborne.selenide.ex.ElementShould">Element should be visible {by text: Ошибка! Банк отказал в проведении операции.}
+  <testcase name="Отказ операции при покупке" classname="ru.netology.test.TestDiplom" time="16.106">
+    <failure message="Element should be visible {by text: Ошибка! Банк отказал в проведении операции.}&#13;&#10;Element: '&lt;div class=&quot;notification__content&quot; displayed:false&gt;&lt;/div&gt;'&#13;&#10;Actual value: hidden&#13;&#10;Screenshot: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730893629829.1.png&#13;&#10;Page source: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730893629829.1.html&#13;&#10;Timeout: 15 s." type="com.codeborne.selenide.ex.ElementShould">Element should be visible {by text: Ошибка! Банк отказал в проведении операции.}
 Element: '&lt;div class=&quot;notification__content&quot; displayed:false&gt;&lt;/div&gt;'
 Actual value: hidden
-Screenshot: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730880147935.1.png
-Page source: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730880147935.1.html
+Screenshot: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730893629829.1.png
+Page source: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730893629829.1.html
 Timeout: 15 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
 	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
@@ -125,9 +125,9 @@ Timeout: 15 s.
 	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
-	at app//com.sun.proxy.$Proxy14.shouldBe(Unknown Source)
+	at app//com.sun.proxy.$Proxy15.shouldBe(Unknown Source)
 	at app//ru.netology.page.PymentElement.failPayVisible(PymentElement.java:56)
-	at app//ru.netology.test.TestDiplom.visibleFailPay(TestDiplom.java:94)
+	at app//ru.netology.test.TestDiplom.visibleFailPay(TestDiplom.java:106)
 	at java.base@11.0.23/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@11.0.23/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base@11.0.23/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -219,17 +219,17 @@ Timeout: 15 s.
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="Пустое поле Год" classname="ru.netology.test.TestDiplom" time="0.548"/>
-  <testcase name="Отображение элементов, приобретение билета покупкой со статусом APPROVED и отображение в БД" classname="ru.netology.test.TestDiplom" time="4.786"/>
-  <testcase name="Приобретение билета покупкой со статусом DECLINED отображение статуса в БД" classname="ru.netology.test.TestDiplom" time="9.033"/>
-  <testcase name="Пустое поле Номер карты" classname="ru.netology.test.TestDiplom" time="0.531"/>
-  <testcase name="Пустое поле Месяц" classname="ru.netology.test.TestDiplom" time="0.562"/>
-  <testcase name="Пустое поле Владелец" classname="ru.netology.test.TestDiplom" time="0.53"/>
-  <testcase name="Нулевой месяц" classname="ru.netology.test.TestDiplom" time="4.738">
-    <failure message="Element not found {with text: Неверный формат}&#13;&#10;Expected: visible&#13;&#10;Screenshot: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730880168663.2.png&#13;&#10;Page source: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730880168663.2.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[contains(normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {with text: Неверный формат}
+  <testcase name="Пустое поле Год" classname="ru.netology.test.TestDiplom" time="0.532"/>
+  <testcase name="Отображение элементов, приобретение билета покупкой со статусом APPROVED и отображение в БД" classname="ru.netology.test.TestDiplom" time="10.958"/>
+  <testcase name="Приобретение билета покупкой со статусом DECLINED отображение статуса в БД" classname="ru.netology.test.TestDiplom" time="6.552"/>
+  <testcase name="Пустое поле Номер карты" classname="ru.netology.test.TestDiplom" time="0.507"/>
+  <testcase name="Пустое поле Месяц" classname="ru.netology.test.TestDiplom" time="0.539"/>
+  <testcase name="Пустое поле Владелец" classname="ru.netology.test.TestDiplom" time="0.565"/>
+  <testcase name="Нулевой месяц" classname="ru.netology.test.TestDiplom" time="4.785">
+    <failure message="Element not found {with text: Неверный формат}&#13;&#10;Expected: visible&#13;&#10;Screenshot: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730893654261.2.png&#13;&#10;Page source: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730893654261.2.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[contains(normalize-space(translate(string(.), '" type="com.codeborne.selenide.ex.ElementNotFound">Element not found {with text: Неверный формат}
 Expected: visible
-Screenshot: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730880168663.2.png
-Page source: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730880168663.2.html
+Screenshot: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730893654261.2.png
+Page source: file:/C:/IDEA/Netology/Diplom/QAATDiplom/QAATDiplom/build/reports/tests/1730893654261.2.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*/text()[contains(normalize-space(translate(string(.), '
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
@@ -242,9 +242,9 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
-	at app//com.sun.proxy.$Proxy14.shouldBe(Unknown Source)
+	at app//com.sun.proxy.$Proxy15.shouldBe(Unknown Source)
 	at app//ru.netology.page.PymentElement.invalidFormat(PymentElement.java:76)
-	at app//ru.netology.test.TestDiplom.zeroMonth(TestDiplom.java:142)
+	at app//ru.netology.test.TestDiplom.zeroMonth(TestDiplom.java:154)
 	at java.base@11.0.23/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@11.0.23/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base@11.0.23/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -341,10 +341,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'x86', os.version: '10.0', java.version: '11.0.23'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fd6f2dfda44b978b8ef12586f38bb531, findElement {using=xpath, value=.//*/text()[contains(normalize-space(translate(string(.), '	
+Command: [f5374586922243ebccc78e74d5a3c2f3, findElement {using=xpath, value=.//*/text()[contains(normalize-space(translate(string(.), '	
  ', '    ')), &quot;Неверный формат&quot;)]/parent::*}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\Ewan1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57812}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57812/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fd6f2dfda44b978b8ef12586f38bb531
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\Ewan1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51349}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51349/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5374586922243ebccc78e74d5a3c2f3
 	at jdk.internal.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
 	at java.base@11.0.23/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base@11.0.23/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
@@ -367,16 +367,16 @@ Session ID: fd6f2dfda44b978b8ef12586f38bb531
 	... 98 more
 </failure>
   </testcase>
-  <testcase name="Пустое поле CVV" classname="ru.netology.test.TestDiplom" time="0.521"/>
-  <testcase name="Отображение элементов, приобретение билета в кредит со статусом DECLINED отображение в БД)" classname="ru.netology.test.TestDiplom" time="6.698"/>
-  <testcase name="Приобретение билета в кредит со статусом APPROVED и отображение в БД)" classname="ru.netology.test.TestDiplom" time="5.056"/>
-  <testcase name="Месяц меньше Today" classname="ru.netology.test.TestDiplom" time="0.523"/>
+  <testcase name="Пустое поле CVV" classname="ru.netology.test.TestDiplom" time="0.53"/>
+  <testcase name="Отображение элементов, приобретение билета в кредит со статусом DECLINED отображение в БД)" classname="ru.netology.test.TestDiplom" time="4.943"/>
+  <testcase name="Приобретение билета в кредит со статусом APPROVED и отображение в БД)" classname="ru.netology.test.TestDiplom" time="3.428"/>
+  <testcase name="Месяц меньше Today" classname="ru.netology.test.TestDiplom" time="0.549"/>
   <system-out><![CDATA[1
 0
 ]]></system-out>
-  <system-err><![CDATA[нояб. 06, 2024 11:01:55 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <system-err><![CDATA[нояб. 06, 2024 2:46:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 130
-нояб. 06, 2024 11:01:55 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+нояб. 06, 2024 2:46:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 130.0.6723.92. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>

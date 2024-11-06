@@ -1,6 +1,8 @@
 package ru.netology.test;
 
 
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
 import ru.netology.data.SQLHelper;
 import ru.netology.page.PymentElement;
@@ -20,6 +22,16 @@ public class TestDiplom {
     @BeforeEach
     void setUp() {
         var pymentElement = open("http://localhost:8080/", PymentElement.class);
+    }
+
+    @BeforeAll
+    static void setUpAll(){
+        SelenideLogger.addListener("allure", new AllureSelenide());
+    }
+
+    @BeforeAll
+    static void tearDownAll(){
+        SelenideLogger.removeListener("allure");
     }
 
 
